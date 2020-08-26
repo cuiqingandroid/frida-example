@@ -2,7 +2,8 @@ import frida
 import sys
 
 device = frida.get_usb_device()
-session = device.attach('com.duia.duiaapp')
+session = device.attach('fm.jihua.kecheng')
+# session = device.attach('com.duia.duiaapp')
 
 jsfilename = 'duia.js'
 jsstr = open(jsfilename, mode='r', encoding='utf-8').read()

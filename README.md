@@ -13,7 +13,7 @@ $ adb push frida-server-12.8.20-android-arm64 /data/local/tmp
 $ adb shell
 $ adb chmod a+x /data/local/tmp/frida-server-12.8.20-android-arm64
 ```
-端口转发
+端口转发(usb无需操作此步骤)
 ```
 $ adb forward tcp:27042 tcp:27042
 $ adb forward tcp:27043 tcp:27043

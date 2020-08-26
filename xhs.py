@@ -16,8 +16,4 @@ with open('xhs.js', mode='r', encoding='utf-8') as f:
     script.on("message", on_message)
     script.load()
 
-
-with open('https.js', mode='r', encoding='utf-8') as f:
-    script = session.create_script(f.read())
-    script.load()
 sys.stdin.read()
