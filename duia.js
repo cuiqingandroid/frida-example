@@ -24,34 +24,4 @@ setImmediate(function () {
         }
     });
 
-
-    // var disableOkhttpProxy = function(){
-    //     var restClient = Java.use("com.shizhuang.duapp.common.helper.net.RestClient");
-    //     var clazz = Java.use("java.lang.Class");
-    //     var reflectField = Java.cast(restClient.class, clazz).getDeclaredField("g");
-    //     reflectField.setAccessible(true);
-    //     send("restClient值为："+ reflectField.toString());
-    //     // reflectField.set("java.lang.String", "frida hooking");
-    //     var objRestClient = restClient.n.value;
-    //     console.log(objRestClient);
-    //     var objOkhttpClient = reflectField.get(objRestClient);
-    //     console.log(objOkhttpClient);
-    //
-    //     var clzOkHttpClient = Java.use("okhttp3.OkHttpClient");
-    //     var fieldProxy = Java.cast(clzOkHttpClient.class, clazz).getDeclaredField("proxy");
-    //     fieldProxy.setAccessible(true);
-    //     fieldProxy.set(objOkhttpClient, null);
-    //     console.log(fieldProxy.get(objOkhttpClient));
-    //
-    //     // var func = clzOkHttpClient.class.getDeclaredMethod("readTimeoutMillis", null);
-    //     // var readTimeoutMillis = func.invoke(objOkhttpClient, null);
-    //     // console.log(readTimeoutMillis);
-    // };
-    //
-    // Java.perform(function () {
-    //     Java.use('android.net.Proxy').setHttpProxySystemProperty(Java.use('android.net.ProxyInfo').buildDirectProxy('10.0.0.16', 8888));
-    //     disableOkhttpProxy();
-    //
-    //     // reflectField.
-    // });
 });

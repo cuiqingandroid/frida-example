@@ -8,9 +8,10 @@ import sys
 # #_ZN3art13DexFileLoader10OpenCommonEPKhjS2_jRKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEjPKNS_10OatDexFileEbbPS9_NS3_10unique_ptrINS_16DexFileContainerENS3_14default_deleteISH_EEEEPNS0_12VerifyResultE
 
 
-package = 'fm.jihua.kecheng'
+package = 'com.yunzhan.liaobei'
 device = frida.get_usb_device()
 pid = device.spawn(package)
+print(f'pid:{pid}')
 session = device.attach(pid)
 
 jsfilename = 'dumpDex.js'
